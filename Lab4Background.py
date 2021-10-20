@@ -29,7 +29,7 @@ pwmLed3.start(0)
 
 try:
   while True:
-    with open('Lab4DataDup.txt','r') as f:
+    with open('Lab4DataDump.txt','r') as f:
       data = json.load(f)
       ledSelected = data['LED']
       brightnessLevel = data['Brightness']
@@ -44,3 +44,4 @@ try:
 except Exception as e:
   print('Error in the code')
   print(e)
+  GPIO.cleanup()
