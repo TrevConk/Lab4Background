@@ -17,9 +17,9 @@ GPIO.setup(led3Pin, GPIO.OUT)
 
 #Setting up pwm to different pins
 
-pwmLed1 = GPIO.PWM(led1Pin)
-pwmLed2 = GPIO.PWM(led2Pin)
-pwmLed3 = GPIO.PWM(led3Pin)
+pwmLed1 = GPIO.PWM(led1Pin, 100)
+pwmLed2 = GPIO.PWM(led2Pin, 100)
+pwmLed3 = GPIO.PWM(led3Pin, 100)
 
 #Starting all of the LED's with them off
 
