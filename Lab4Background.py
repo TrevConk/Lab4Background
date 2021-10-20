@@ -29,7 +29,7 @@ pwmLed3.start(0)
 
 try:
   while True:
-    with open('Lab4DataDump.txt','r') as f:
+    with open('/usr/lib/cgi-bin/Lab4DataDump.txt','r') as f:
       data = json.load(f)
       ledSelected = data['LED']
       brightnessLevel = data['Brightness']
