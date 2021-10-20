@@ -39,7 +39,7 @@ try:
       pwmLed2.ChangeDutyCycle(brightnessLevel)
     elif(ledSelected == '3'):
       pwmLed3.ChangeDutyCycle(brightnessLevel)
-    time.sleep(.1)
+    time.sleep(0.1)
           
 except Exception as e:
   print('Error in the code')
