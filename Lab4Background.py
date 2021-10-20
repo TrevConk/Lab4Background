@@ -32,7 +32,7 @@ try:
     with open('/usr/lib/cgi-bin/Lab4DataDump.txt','r') as f:
       data = json.load(f)
       ledSelected = data['LED']
-      brightnessLevel = data['Brightval']
+      brightnessLevel = data['BrightVal']
     if(ledSelected == '1'):
       pwmLed1.ChangeDutyCycle(brightnessLevel)
     elif(ledSelected == '2'):
