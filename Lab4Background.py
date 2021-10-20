@@ -44,4 +44,5 @@ try:
 except Exception as e:
   print('Error in the code')
   print(e)
+  print(e.format_exc())
   GPIO.cleanup()
